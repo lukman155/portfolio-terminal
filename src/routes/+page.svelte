@@ -41,11 +41,17 @@
       <Tab3 />
     {/if}
 
-
+    <footer>
+      <p>Made by Lukman Abdulkarim © 2023</p>
+    </footer>
   </section>
 </div>
 
 <style>
+
+  p {
+    color: rgba(255, 255, 255, 0.5);
+  }
 
   a {
     background-color: #000;

@@ -7,24 +7,27 @@
   <p>Interactivity is the lifeblood of a website. It's what keeps visitors engaged and coming back for more.</p>
   <br>
   <p>Outside of programming, I enjoy playing chess and practicing Judo. If you happen to be in the same city I live, maybe we can hang out and code together.</p>
-</div>
 
-<h2>Connect with me on</h2>
-<div class="socials slide-left-content">
+
+  <h2>Connect with me on</h2>
   
-  <a href="/" class="links"><i class="fa-brands fa-github"></i> Github</a>
-  <a href="/" class="links"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-  <a href="/" class="links"><i class="fa-brands fa-x-twitter"></i> X (Twitter)</a>
-  <a href="/" class="links"><i class="fa-brands fa-instagram"></i> Instagram</a>
-  <a href="/" class="links"><i class="fa-brands fa-angellist"></i> AngelList</a>
-  <a href="/" class="links"><i class="fa-brands fa-youtube"></i> Youtube</a>
+  <div class="socials slide-left-content">
+    <a href="/" class="links"><i class="fa-brands fa-github"></i> Github</a>
+    <a href="/" class="links"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+    <a href="/" class="links"><i class="fa-brands fa-x-twitter"></i> X (Twitter)</a>
+    <a href="/" class="links"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    <a href="/" class="links"><i class="fa-brands fa-angellist"></i> AngelList</a>
+    <a href="/" class="links"><i class="fa-brands fa-youtube"></i> Youtube</a>
+  </div>
 </div>
 
 <style>
 
+
   .socials {
     font-size: .8em;
     display: flex;
+    justify-content: center;
     gap: 1em;
     flex-wrap: wrap;
     color: #ffffff7d;
@@ -38,7 +41,7 @@
   }
 
   a:hover {
-    text-underline-offset: 10px;
+    text-underline-offset: 9px;
     text-decoration-color: #ffffff;
   }
 
@@ -62,7 +65,7 @@
     align-self: flex-start;
     font-weight: 600;
     color: #ffffffe1;
-    margin: 0 0 1em 0;
+    margin: 3em 0 2em 0;
   }
 
   p {
@@ -103,14 +106,14 @@
   }
 
   to {
-    transform: translatex(0);
+    transform: translateX(0);
     opacity: 100
   }
 }
 
 .slide-left-content > * {
   --stagger: 0;
-  --delay: 150ms;
+  --delay: 180ms;
   --start: 0ms;
   animation: slide-left 1s both 1;
   animation-delay: calc(var(--start) + var(--stagger) * var(--delay));
@@ -139,6 +142,7 @@
 .slide-enter-content > *:nth-child(6) { --stagger: 5; }
 .slide-enter-content > *:nth-child(7) { --stagger: 6; }
 .slide-enter-content > *:nth-child(8) { --stagger: 7; }
+.slide-enter-content > *:nth-child(9) { --stagger: 8; }
 
 
 @media (min-width: 800px) {

@@ -4,43 +4,53 @@
   const projects = [
     { 
       name:'Studio Umami',
-      desc:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quos commodi non nulla, dolore consequatur facere tempora atque error dolor est sequi odit eveniet, voluptatem quisquam porro vero culpa voluptas..',
+      desc:'I crafted a bespoke digital experience for Studio Umami, leveraging cutting-edge technologies to enhance their online presence. I worked closely with them to understand their unique needs and develop a website that would meet those needs. I then utilized best practices to create a website that is fast, secure, and user-friendly.',
       alt: 'icon',
       tech:['Svelte', 'JavaScript', 'TailwindCSS', 'Vercel'],
       image:"/studio-umami.png",
-      liveUrl:'/',
-      sourceCode:'/',
-      color: 'rgba(255, 255, 255, 0.1)',
+      liveUrl:'https://studio-umami-agency.vercel.app/',
+      sourceCode:'https://github.com/lukman155/studio-umami-agency',
+      color: 'rgba(255, 255, 255, 0.15)',
     },
     { 
       name:'Landlrd',
-      desc:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quos commodi non nulla, dolore consequatur facere tempora atque error dolor est sequi odit eveniet, voluptatem quisquam porro vero culpa voluptas..',
+      desc:'"Landlrd", a student accommodation rental application meticulously crafted with Ruby on Rails and Bootstrap. It sharpened my proficiency in problem-solving, robust database management, intricate user authentication, and responsive design.',
       alt: 'icon',
       tech:['Ruby on Rails', 'JavaScript', 'Bootstrap', 'Render', 'PostgreSQL'],
-      image:"/studio-umami.png",
-      liveUrl:'/',
-      sourceCode:'/',
-      color: 'rgba(0, 128, 0, 0.1)',
+      image:"/landlrd.png",
+      liveUrl:'https://landlrd.onrender.com/',
+      sourceCode:'https://github.com/lukman155/landlord',
+      color: 'rgba(0, 128, 0, 0.15)',
     },
     { 
       name:'GetLinked',
-      desc:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quos commodi non nulla, dolore consequatur facere tempora atque error dolor est sequi odit eveniet, voluptatem quisquam porro vero culpa voluptas..',
+      desc:'Precision and pixel-perfection took the forefront for this project. I meticulously translated design concepts into code, ensuring every element, layout, and detail matched the original vision flawlessly. This project highlights my commitment to design fidelity and attention to detail.',
       alt: 'icon',
       tech:['Svelte', 'JavaScript', 'TailwindCSS', 'Vercel'],
-      image:"/studio-umami.png",
-      liveUrl:'/',
-      sourceCode:'/',
-      color: 'rgba(128, 0, 128, 0.1)',
+      image:"/getlinked.png",
+      liveUrl:'https://getlinked-pink.vercel.app/',
+      sourceCode:'https://github.com/lukman155/getlinked',
+      color: 'rgba(128, 0, 128, 0.15)',
     },
     { 
-      name:'Studio Umami',
-      desc:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quos commodi non nulla, dolore consequatur facere tempora atque error dolor est sequi odit eveniet, voluptatem quisquam porro vero culpa voluptas..',
+      name:'Magic Maths',
+      desc:'Applied techniques learned from Practical React - writing requirements, iterating, and structuring app as an MVC. This really helped me build a much better foundation in React and JavaScript for web development. No frameworks were used. Design is based off the original Apple Iphone Calculator.',
       alt: 'icon',
-      tech:['Svelte', 'JavaScript', 'TailwindCSS', 'Vercel'],
-      image:"/studio-umami.png",
-      liveUrl:'/',
-      sourceCode:'/',
-      color: 'rgba(255, 255, 255, 0.1)',
+      tech:['React', 'JavaScript', 'Render'],
+      image:"/magicmaths.png",
+      liveUrl:'https://math-magic-react-static.onrender.com/',
+      sourceCode:'https://github.com/lukman155/magicmaths',
+      color: 'rgba(255,255,153, .15)',
+    },
+    { 
+      name:'PlayFree',
+      desc:'PlayFree is a React web application that fetches data from a catalogue of free-to-play games and displays it in a user-friendly way. It allowed me to learn and practice, fetching data from remote APIs, rendering data in React components, styling React components, and deploying React applications.',
+      alt: 'icon',
+      tech:['React', 'JavaScript', 'Vercel'],
+      image:"/playfree.png",
+      liveUrl:'https://playfree.vercel.app/',
+      sourceCode:'https://github.com/lukman155/playfree',
+      color: 'rgba(0,74,74,.15)',
     },
   ];
 
@@ -78,7 +88,7 @@
       {/each}
     </div>
     <div class="card-actions justify-stretch">
-      <a href={project.liveUrl} class="btn btn-sm btn-primary">Live Link</a>
+      <a href={project.liveUrl} target="_blank" class="btn btn-sm btn-primary">Live Link <span>&#8594;</span></a>
       <a href={project.sourceCode} class="btn btn-sm btn-primary">Source Code</a>
     </div>
   </div>
@@ -107,7 +117,7 @@
   }
 
   h2 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin-bottom: 1em;
   }
 
@@ -119,6 +129,7 @@
 
 
   .card {
+    height: 320px;
   position: relative;
   flex-direction: column;
   margin-bottom: 3em;
@@ -127,10 +138,6 @@
 
   .card-body {
     max-width: 500px;
-  }
-
-  button {
-    font-size: .7em;
   }
 
   .hover-image {

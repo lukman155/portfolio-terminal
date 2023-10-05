@@ -1,3 +1,5 @@
+<div class="wrapper">
+
 <div class="mockup-code">
   <pre data-prefix="$"><code>bun install lukman</code></pre> 
   <pre data-prefix=">" class="text-warning"><code>Lukman.contactInfo</code></pre> 
@@ -11,8 +13,16 @@
   <pre data-prefix=">" class="text-warning"><code>Lukman.skills</code></pre> 
   <pre data-prefix=">" class="text-success"><code>["JavaScript", "Python", "Svelte", "React"]</code></pre>
 </div>
+</div>
   
   <style>
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+    }
     .mockup-code {
       width: 100%;
       background-color: rgb(31, 31, 31);

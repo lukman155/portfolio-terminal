@@ -12,6 +12,8 @@
     tab = x
   };
 
+  let year = new Date().getFullYear();
+
 
 </script>
 
@@ -50,7 +52,7 @@
     {/if}
 
     <footer>
-      <p>Made by Lukman Abdulkarim © 2023</p>
+      <p>Made by BattleDevLukman © {year} with &#9829; and lots of 'dambun nama'</p>
     </footer>
   </section>
 </div>
@@ -62,7 +64,9 @@
   }
 
   p {
+    font-size: small;
     color: rgba(255, 255, 255, 0.5);
+    margin: 1em;
   }
 
   a {

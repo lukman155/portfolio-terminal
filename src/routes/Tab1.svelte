@@ -12,11 +12,11 @@
   <h2>Connect with me on</h2>
   
   <div class="socials slide-left-content">
-    <a href="/" class="links"><i class="fa-brands fa-github"></i> Github</a>
-    <a href="/" class="links"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-    <a href="/" class="links"><i class="fa-brands fa-x-twitter"></i> X (Twitter)</a>
+    <a href="https://github.com/lukman155" class="links"><i class="fa-brands fa-github"></i> Github</a>
+    <a href="https://www.linkedin.com/in/lukmanbaba/" class="links"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+    <a href="https://twitter.com/Lukmanbattledev" class="links"><i class="fa-brands fa-x-twitter"></i> X (Twitter)</a>
     <a href="/" class="links"><i class="fa-brands fa-instagram"></i> Instagram</a>
-    <a href="/" class="links"><i class="fa-brands fa-angellist"></i> AngelList</a>
+    <a href="https://wellfound.com/u/lukman-abdulkarim" class="links"><i class="fa-brands fa-angellist"></i> AngelList</a>
     <a href="/" class="links"><i class="fa-brands fa-youtube"></i> Youtube</a>
   </div>
 </div>

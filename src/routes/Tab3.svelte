@@ -88,8 +88,8 @@
       {/each}
     </div>
     <div class="card-actions justify-stretch">
-      <a href={project.sourceCode} class="btn btn-sm btn-primary source-btn">Source Code</a>
-      <a href={project.liveUrl} target="_blank" class="btn btn-sm btn-primary live-btn">Live Link <span>&#8594;</span></a>
+      <a href={project.sourceCode} class="btn btn-xs sm:btn-sm btn-primary source-btn">Source Code</a>
+      <a href={project.liveUrl} target="_blank" class="btn btn-xs sm:btn-sm btn-primary live-btn">Live Link <span>&#8594;</span></a>
     </div>
   </div>
 </div>
@@ -138,7 +138,7 @@
 
 
   .card {
-    height: 320px;
+  
   position: relative;
   flex-direction: column;
   margin-bottom: 3em;
@@ -166,6 +166,7 @@
   @media (min-width:800px){
     .card {
   flex-direction: row;
+  height: 320px;
 }
 
     .hover-image {

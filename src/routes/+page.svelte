@@ -46,7 +46,7 @@
     {/if}
 
     {#if tab==3}
-    <div in:fly={{ x: 100, delay:300 }} out:fly={{ x: -100, delay:300 }}>
+    <div in:fly={{ x: 100, delay:300 }} out:fly={{ x: -100 }}>
       <Tab3 />
     </div>
     {/if}

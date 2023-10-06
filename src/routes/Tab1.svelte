@@ -56,6 +56,7 @@
   }
   
   h1 {
+    position: relative;
     font-size: 2em;
     font-weight: 700;
     margin: 1em 0;
@@ -113,7 +114,7 @@
 
 .slide-left-content > * {
   --stagger: 0;
-  --delay: 180ms;
+  --delay: 150ms;
   --start: 0ms;
   animation: slide-left 1s both 1;
   animation-delay: calc(var(--start) + var(--stagger) * var(--delay));
@@ -128,12 +129,13 @@
 
 .slide-enter-content > * {
   --stagger: 0;
-  --delay: 150ms;
+  --delay: 100ms;
   --start: 0ms;
   animation: slide-enter 1s both 1;
   animation-delay: calc(var(--start) + var(--stagger) * var(--delay));
 }
 
+.slide-enter-content > *:nth-child(1) { animation: none; }
 .slide-enter-content > *:nth-child(2) { --stagger: 0; }
 .slide-enter-content > *:nth-child(3) { --stagger: 1; }
 .slide-enter-content > *:nth-child(4) { --stagger: 2; }

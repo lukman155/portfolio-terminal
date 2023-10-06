@@ -55,8 +55,7 @@
   ];
 
   onMount(()=>{
-      const cards = document.querySelectorAll('.color');
-    console.log(cards);
+    const cards = document.querySelectorAll('.color');
     cards.forEach((card) => {
       card.addEventListener('mouseenter', () => {
         const index = card.getAttribute('data-index');
@@ -68,6 +67,7 @@
         card.style.removeProperty('--hover-color');
       });
     });
+    
   })
   
 
@@ -88,8 +88,8 @@
       {/each}
     </div>
     <div class="card-actions justify-stretch">
-      <a href={project.liveUrl} target="_blank" class="btn btn-sm btn-primary">Live Link <span>&#8594;</span></a>
-      <a href={project.sourceCode} class="btn btn-sm btn-primary">Source Code</a>
+      <a href={project.sourceCode} class="btn btn-sm btn-primary source-btn">Source Code</a>
+      <a href={project.liveUrl} target="_blank" class="btn btn-sm btn-primary live-btn">Live Link <span>&#8594;</span></a>
     </div>
   </div>
 </div>
@@ -99,6 +99,15 @@
 
 .color {
   transition: background-color 0.3s ease; /* Add a transition effect for smoother color change */
+}
+
+
+.source-btn {
+  margin-left: 2px;
+}
+
+.source-btn:hover, .live-btn:hover {
+  background-color: rgb(37, 37, 37);
 }
 
 .color:hover {

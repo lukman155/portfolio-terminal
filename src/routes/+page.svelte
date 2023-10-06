@@ -1,8 +1,10 @@
 <script>
+	import { fade, fly } from "svelte/transition";
   import "../app.css";
 	import Tab1 from "./Tab1.svelte";
 	import Tab2 from "./Tab2.svelte";
 	import Tab3 from "./Tab3.svelte";
+	import { backOut } from "svelte/easing";
 
   let tab = 1;
 
@@ -30,15 +32,21 @@
     </nav>
 
     {#if tab==1}
-      <Tab1 />
+      <div in:fly={{ x: -100 }} out:fly={{ x: -100 }}>
+        <Tab1 />
+      </div>
     {/if}
 
     {#if tab==2}
+    <div in:fly={{ x: 100 }} out:fly={{ x: -100 }}>
       <Tab2 />
+    </div>
     {/if}
 
     {#if tab==3}
+    <div in:fly={{ x: 100, delay:300 }} out:fly={{ x: -100 }}>
       <Tab3 />
+    </div>
     {/if}
 
     <footer>
@@ -48,6 +56,10 @@
 </div>
 
 <style>
+
+  div {
+    width: 100%;
+  }
 
   p {
     color: rgba(255, 255, 255, 0.5);

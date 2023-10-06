@@ -19,11 +19,12 @@
     .wrapper {
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      width: 100%;
       height: 80vh;
     }
     .mockup-code {
+      height: 80%;
       width: 100%;
       background-color: rgb(31, 31, 31);
     }

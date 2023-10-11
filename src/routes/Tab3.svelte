@@ -3,6 +3,16 @@
 
   const projects = [
     { 
+      name:'FMRepEX',
+      desc:'FMRepEx (Facility Management Representative Expert) is a software solution that helps organizations manage their facilities and assets more efficiently and effectively. It can be used to track and manage work orders, preventive maintenance, inventory, and other facility-related tasks.',
+      alt: 'icon',
+      tech:['Svelte', 'JavaScript', 'Firebase', 'TailwindCSS', 'Vercel'],
+      image:"/fmrep.png",
+      liveUrl:'https://fmrep-frontend.vercel.app/',
+      sourceCode:'https://github.com/lukman155/fmrep-frontend',
+      color: 'rgba(255, 255, 255, 0.15)',
+    },
+    { 
       name:'Studio Umami',
       desc:'I crafted a bespoke digital experience for Studio Umami, leveraging cutting-edge technologies to enhance their online presence. I worked closely with them to understand their unique needs and develop a website that would meet those needs. I then utilized best practices to create a website that is fast, secure, and user-friendly.',
       alt: 'icon',
